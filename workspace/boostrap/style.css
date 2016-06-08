@@ -1,0 +1,12 @@
+body {
+	font-family: helvetica;
+	background-color: #edeff0;
+}
+p {
+	color: #b2bac2;
+}
+.container {
+	background: #fff;
+	width: 700px;
+	height: 350px;
+}
