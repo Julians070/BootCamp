@@ -1,4 +1,5 @@
 body {
+  margin: 10px;
 	font-family: helvetica;
 	background-color: #edeff0;
 }
@@ -9,4 +10,12 @@ p {
 	background: #fff;
 	width: 700px;
 	height: 350px;
+}
+.btn-rt{
+	background-color: #5fcf80;
+	border-color: #3ac162;
+}
+.btn-st{
+	background-color: #3f8abf;
+	border-color: #326e99;
 }
