@@ -1,0 +1,188 @@
+*{box-sizing: border-box; }
+
+body {
+font-family: 'Roboto', sans-serif;
+background: #eee;
+}
+.home-wrapper{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/bg_2.jpg') no-repeat, center, top;
+  background-size: cover;
+  color: white;
+}
+header {
+  background-color: rgba(48, 48, 48, 0.5);
+  position: fixed;
+  padding: 10px 0;
+  width: 100%
+
+}
+header nav {
+  float: right;
+  margin: 10px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+header nav a.active {
+  background: #fed136;
+  border-radius: 3px;
+}
+header .logo {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 10px;
+}
+#home{
+  text-align: center;
+  padding: 200px 0 150px;
+}
+#home h1 {
+  font-size: 68px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+#home p {
+  font-size: 20px;
+  margin: 20px;
+}
+#home .social {
+  margin-top: 80px;
+}
+#home .social a {
+  color: white;
+  background: black;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+}
+#home .social a:hover  {
+  background: #fed136;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#servicios h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px;
+}
+#servicios {
+  text-align: center;
+}
+#servicios .box {
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+  padding: 10px;
+}
+#portafolio .box {
+  text-align: center;
+  display: inline-block;
+  width: 31%;
+  margin: 1%;
+  background-color: white;
+}
+#portafolio .box img{
+  width: 100%;
+}
+#portafolio h2{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 80px;
+}
+#video{
+  background: black;
+  text-align: center;
+  padding: 30px 0;
+}
+#contacto{
+  background: #303030;
+  background-image: url(../images/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#contacto h2{
+  color: white;
+  font-size: 32px;
+}
+#contacto input{
+  padding: 20px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#contacto textarea{
+  margin: 20px 0;
+  padding: 20px;
+  width: 400px;
+}
+#contacto button{
+  background: #fed136;
+  padding: 20px 40px;
+  border-color: #fed136;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+}
+section {
+  padding: 80px 0;
+}
+footer{
+  font-size: 18px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and  (min-width: 992px) {
+  .home-wrapper {
+    width: 100%;
+  }
+  #home h1 {
+    font-size: 48px;
+  }
+  #home p {
+    font-size: 18px;
+  }
+  #contacto {
+    width: 100%;
+  }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and  (min-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header nav {
+    float: none;
+    text-align: center;
+    margin: 10px;
+  }
+  header .logo {
+    font-size: 18px;
+  }
+  header nav a{
+    padding: 5px 10px;
+  }
+}

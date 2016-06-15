@@ -1,0 +1,28 @@
+.navbar-header{
+  margin-left: 20px;
+}
+.navbar-nav{
+  margin-right: 20px;
+}
+form .form-group {
+  width: 23%;
+}
+form .form-group .input-group{
+  width: 100%;
+}
+.caja1{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.input-group{
+  margin-left: 25px;
+}
+.btn-group{
+  float: right;
+}
+.btn-primary{
+  margin-left: 40px;
+}
+.btn-default {
+  margin-right: 60px;
+}
