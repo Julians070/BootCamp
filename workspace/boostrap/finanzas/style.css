@@ -1,28 +1,76 @@
-.navbar-header{
-  margin-left: 20px;
-}
-.navbar-nav{
-  margin-right: 20px;
-}
-form .form-group {
-  width: 23%;
-}
-form .form-group .input-group{
-  width: 100%;
-}
-.caja1{
-  margin-top: 15px;
-  margin-left: 10px;
-}
 .input-group{
-  margin-left: 25px;
-}
-.btn-group{
-  float: right;
+    width: 275px;
 }
 .btn-primary{
-  margin-left: 40px;
+    margin-left: 100px;
 }
-.btn-default {
-  margin-right: 60px;
+.desplegable{
+    margin-top: 8px;
+    float: right;
+    padding-right: 40px;
+}
+.list-group{
+    padding-left: 15px !important;
+}
+table .left{
+    text-align: center;
+}
+table span.uno{
+    font-size: 11px;
+    color: #bbb;
+    font-weight: 600;
+}
+table span.dos{
+    font-size: 26px;
+    color: #bbb;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px;
+
+}
+table .center span.text{
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 600;
+}
+table .center span.text .label{
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+table .center h5 {
+    font-size: 17px;
+    margin-top: 3px;
+    color: #2F4F72;
+    font-weight: 600;
+}
+table .right span.num{
+    color: #666;
+}
+table .right{
+    text-align: right;
+}
+table .right a{
+    display: inline-block;
+}
+table .right span{
+    color: #bbb;
+    display: inline-block;
+}
+table .right .caja2 {
+   margin-right: 0px;
+}
+table .right .caja2 .caj{
+   display: inline-block;
+}
+table .right .caja2 span{
+    font-size: 12px;
+    padding-right: 3px;
+}
+table .right .caja2 a{
+    color: #bbb;
+    font-size: 12px;
+}
+table .right .caja2 a:hover{
+    color: #2F4F72;
 }

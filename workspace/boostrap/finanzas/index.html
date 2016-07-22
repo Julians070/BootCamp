@@ -1,88 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
+  <title>Finanzas</title>
+
+  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Mis Finanzas</title>
 </head>
 <body>
-<div class="row">
-  <nav class="navbar navbar-inverse">
-
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand">mis<strong>finanzas</strong> </a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling glyphicon glyphicon-tasks -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"> Resumen</span></a></li>
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"> Transacciones</span></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a>Salir</a></li>
-        </ul>
-      </div>
-
-
-  </nav>
-</div>
-  <div class="row">
-    <form class="form-inline col-sm-12">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscar">
-          <div class="input-group-addon">
-            <span class=" glyphicon glyphicon-search"></span>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand"><span>mis<strong>finanza</strong></span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-tasks"></span>Resumen <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-indent-left"></span>Transacciones</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscar">
+            <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
           </div>
         </div>
-
-      </div>
-       <button type="submit" class="btn btn-primary">+ Nueva Transacción</button>
-       <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Agosto 2014 <span class="caret"></span>
+        <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Nueva Transaccion</button>
+      </form>
+      <div class="dropdown desplegable">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Agosto 2014
+          <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
           <li><a href="#">Action</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
         </ul>
       </div>
-    </form>
-
-  </div>
-  <div class="row1">
-    <div class="caja1 col-sm-3">
-      <div class="list-group">
-        <button type="button" class="list-group-item">Ingresos</button>
-        <button type="button" class="list-group-item">Gastos</button>
+    <!-- Single button
+    <div class="dropdown desplegable">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Agosto 2014 <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a href="#">Septiembre 2014</a></li>
+            <li><a href="#">Octubre 2014</a></li>
+            <li><a href="#">Noviembre 2014</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Diciembre 2014</a></li>
+        </ul>
+      </div>-->
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="row">
+          <div class="list-group">
+            <button type="button" class="list-group-item">Ingresos</button>
+            <button type="button" class="list-group-item">Gastos</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="list-group">
+            <button type="button" class="list-group-item">Restaurantes</button>
+            <button type="button" class="list-group-item">Hogar</button>
+            <button type="button" class="list-group-item">Diversion</button>
+            <button type="button" class="list-group-item">Viajes</button>
+            <button type="button" class="list-group-item">Carro</button>
+          </div>
+        </div>
       </div>
-      <div class="list-group">
-        <button type="button" class="list-group-item">Restaurantes</button>
-        <button type="button" class="list-group-item">Hogar</button>
-        <button type="button" class="list-group-item">Diversión</button>
-        <button type="button" class="list-group-item">Viajes</button>
-        <button type="button" class="list-group-item">Carro</button>
+      <div class="col-sm-9">
+        <table class="table col-sm-12">
+          <tr>
+            <td class="col-sm-12">
+              <div class="col-sm-1 left">
+                <span class="uno">Ago</span>
+                <span class="dos">26</span>
+              </div>
+              <div class="col-sm-8 center">
+                <span class="text">Gasto<span class="label label-info">Hogar</span></span>
+                <h5>Arriendo</h5>
+              </div>
+              <div class="col-sm-3 right">
+                <span class="num">$900,000</span>
+                <div class="row caja2">
+                  <div class="caj"><span class="glyphicon glyphicon-check"></span><a href="#">Editar</a></div>
+                  <div class="caj"><span class="glyphicon glyphicon-trash"></span><a href="#">Eliminar</a></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-sm-12">
+              <div class="col-sm-1 left">
+                <span class="uno">Ago</span>
+                <span class="dos">25</span>
+              </div>
+              <div class="col-sm-8 center">
+                <span class="text">Gasto<span class="label label-info">Restaurante</span></span>
+                <h5>El rincon de mi tierra</h5>
+              </div>
+              <div class="col-sm-3 right">
+                <span class="num">$120,000</span>
+                <div class="row caja2">
+                  <div class="caj"><span class="glyphicon glyphicon-check"></span><a href="#">Editar</a></div>
+                  <div class="caj"><span class="glyphicon glyphicon-trash"></span><a href="#">Eliminar</a></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-sm-12">
+              <div class="col-sm-1 left">
+                <span class="uno">Ago</span>
+                <span class="dos">24</span>
+              </div>
+              <div class="col-sm-8 center">
+                <span class="text">Ingresos</span>
+                <h5>Salario</h5>
+              </div>
+              <div class="col-sm-3 right">
+                <span class="num">$4,500,000</span>
+                <div class="row caja2">
+                  <div class="caj"><span class="glyphicon glyphicon-check"></span><a href="#">Editar</a></div>
+                  <div class="caj"><span class="glyphicon glyphicon-trash"></span><a href="#">Eliminar</a></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
-    <div class="caja2 col-sm-10">
-
-    </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TABLA DE MULTIPLICAR</title>
+</head>
+<body>
+  <script>
+  function typeExtractor(a) {
+      var r = new Object();
+      var number = new Array();
+      var string = new Array();
+      var boolean = new Array();
+      r = {number:number , string:string , boolean:boolean};
+      for (var i = 0; i < a.length; i++) {
+      if (typeof a[i] == "number") {
+          r.number.push(a[i]);
+      } else if (typeof a[i] == "string") {
+          r.string.push(a[i]);
+      } else if (typeof a[i] == "boolean") {
+          r.boolean.push(a[i]); 
+      }  
+      }
+      console.log(r);
+    }
+  </script>
+</body>
+</html>

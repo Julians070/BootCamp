@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplier</title>
+</head>
+<body>
+  <br>
+  <span>Multiplicacion en Array</span>
+  <br>
+  <input type="text" id="nm1" placeholder="Numero para Array">
+  <input type="text" id="nm2" placeholder="numero para multiplicar">
+  <input type="button" onClick="multiplier()" value="Enviar">
+  <script>
+      function multiplier(){
+        var num1= document.getElementById("nm1").value;
+        var exp = num1.split(",");
+        var num2= document.getElementById("nm2").value;
+        var res = exp.map(function(num){
+            return parseInt(num) * parseInt(num2);
+        });
+        alert(res);
+      }
+  </script>
+</body>
+</html>
